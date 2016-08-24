@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8' />
+		<link rel="stylesheet" href="css/main.css">
+		<title>Chat</title>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/sha.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/Autolinker.min.js"></script>
+		<script src="js/b64.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/aes.js"></script>
+		<script src="js/aes-ctr.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Openroom</h1>
+			<span id="userCo"></span>
+		</header>
+		<div id="body">
+			<div>You are <span id="yn"></span></div>
+			<div id="log"><div style="text-align:center;font-size:1.1em;">Welcome to the room</div></div><br>
+			<input type="text" id="message" placeholder="Write your message here..." />
+			<input type="button" id="send-button" value="Send" /><hr><br>
+			<input type="file" id="picture"><input type="button" id="send-file" value="Send" /><hr>
+		</div>
+	</body>
+</html>
